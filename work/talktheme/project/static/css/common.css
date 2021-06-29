@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+}
+
+header .header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header a, .footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+.m-siteLogo {
+    float:left;
+    margin: 0;
+    margin-top: 82px;
+    margin-left: 7%;
+}
+
+header .m-siteLogo img {
+    vertical-align: bottom;
+    padding-left: 13px;
+}
+
+header nav {
+    float: right;
+    height: 24px;
+    display: block;
+    margin-top: 106px;
+    margin-right: 7%;
+}
+
+header .main-visual {
+    background: #fffacd;
+    height: 135px;
+}
+
+/* Main */
+
+main .main {
+    margin: auto 7%;
+}
+
+main .base {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+main .page-title {
+    text-align: center;
+}
+
+main .top p {
+    text-align: center;
+}
+
+main .top-visual {
+    text-align: center;
+}
+
+/* footer */
+footer .footer {
+    /* .baseに対してabsolute */
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer nav {
+    /* footerの中でabsolute */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer .footer-visual {
+    background: #fffacd;
+    height: 60px;
+}
+
+/* Component */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    padding: 0 20px;
+    display: inline-block;
+}
+
+nav li a::after {
+    border-bottom: solid 2px #000;
+    bottom: 0;
+    content: "";
+    display: block;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    width: 0;
+}
+  
+nav li a:hover::after {
+    width: 100%;
+}

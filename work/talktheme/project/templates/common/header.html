@@ -1,0 +1,14 @@
+<header>
+    {% load static %}
+    <!-- Healder -->
+    <div class="header">
+        <h1 class="m-siteLogo">
+            <a href="{% url 'web:home' %}"><img src='{% static "image/logo.png" %}' alt="title" ></a>
+        </h1>    
+        {% include 'component/navigation.html' %}
+    </div>
+    <!-- header-background -->
+    <div class="main-visual">
+
+    </div>
+</header>

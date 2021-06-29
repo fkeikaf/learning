@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <meta charset="utf-8">
+        <title>
+            {% block title %}{% endblock %} | HELIOS
+        </title>
+        <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    </head>
+    <body>
+        <div class="base">
+        {% include "common/header.html" %}
+        <main>
+            <div class="main">
+                {% block body_main %}
+                {% endblock %}        
+            </div>
+        </main>
+        {% include "common/footer.html" %}
+        </div>
+    </body>
+</html>

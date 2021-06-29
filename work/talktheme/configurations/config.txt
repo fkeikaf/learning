@@ -1,0 +1,10 @@
+## directry
+/etc/talktheme
+    /production
+    /development
+        /project
+        /venv    
+        
+
+## gunicorn
+/etc/talktheme/development/venv/devenv/bin/gunicorn --bind 127.0.0.1:8000 --capture-output config.wsgi:application
