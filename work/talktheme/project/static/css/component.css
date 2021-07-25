@@ -1,0 +1,60 @@
+/* Navigation */
+nav ul {
+    list-style: none;
+    min-width: 520px;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    padding: 0 20px;
+    display: inline-block;
+}
+
+nav li a::after {
+    border-bottom: solid 2px #000;
+    bottom: 0;
+    content: "";
+    display: block;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    width: 0;
+}
+  
+nav li a:hover::after {
+    width: 100%;
+}
+
+/* Button */
+/* Circle 3d */
+.btn-circle-3d {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    overflow: hidden;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    transition: .4s;
+}
+  
+.btn-circle-3d.red:active, .btn-circle-3d.blue:active {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    border-bottom: none;
+}
+
+.btn-circle-3d.red {
+    border-bottom: solid 3px #bd6565;
+    background: #ff8181;
+}
+
+.btn-circle-3d.blue {
+    border-bottom: solid 3px #1484ca;
+    background: #87befd;
+}

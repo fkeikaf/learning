@@ -1,16 +1,18 @@
 {% extends "base/base.html" %}
     {% load static %}
 
-    {% block title %}Home{% endblock %}
+    {% block title %}Product{% endblock %}
 
     {% block body_main %}
         <div class="product">
-            <h2 class="page-title">Products</h2>
+            <h2 class="page-title">Product</h2>
             <div class="row">
                 <div class="item">
                     <div class="product-link">
                         <h3>トークテーマルーレット</h3>
-                        <a href="{% url 'web:talktheme' %}">test</a>
+                        <!-- <a href="{% url 'web:home' %}">test</a> -->
+                        <a href="{% url 'web:talktheme:main' %}">test</a>
+                        <!-- <a href="./talktheme/">Test</a> -->
                         <p> >  詳細をみる</p>
                     </div>
                 </div>

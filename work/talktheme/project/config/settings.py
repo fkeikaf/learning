@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ujh7pqabw+&b=)4sfkeq(kn@h-4!@nl!rkuxh=lb(xli^!ilcd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -120,7 +120,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-STATIC_ROOT = '/usr/share/nginx/html/static'
+# STATIC_ROOT = '/usr/share/nginx/html/static'
+STATIC_ROOT = '/var/work/learning/work/talktheme/static'
 
 
 LOGGING = {
@@ -136,7 +137,7 @@ LOGGING = {
     'handlers': {
         'file': {
             'class': 'logging.FileHandler',
-            'filename': '/var/log/talktheme/development/django/application.log',
+            'filename': '../logs/application.log',
             'formatter':'standard',
         },
     },

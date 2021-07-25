@@ -10,6 +10,3 @@ def home(request):
 
 def product(request): 
     return render(request, 'product/index.html')
-
-def talktheme(request): 
-    return render(request, 'product/talk-theme/index.html')

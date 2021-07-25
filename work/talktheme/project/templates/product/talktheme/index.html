@@ -1,0 +1,21 @@
+{% extends "base/base.html" %}
+    {% load static %}
+
+    {% block title %}トークテーマガチャ{% endblock %}
+
+    {% block body_main %}
+        <div class="product">
+            <h2 class="page-title">トークテーマガチャ</h2>
+            <div class="content">
+                <dev class="content-text">
+                    ガチャを回して話題を手に入れよう！<br>
+                    一回当たったテーマはエントリーされなくなるぞ！
+                </dev>
+                <div class="draw-buttons">
+                    {% include 'component/button_circle_3d_red.html' with js_function="callDraw()" button_name="ガチャを引く" %}
+                    {% include 'component/button_circle_3d_blue.html' with js_function="callReset()" button_name="リセット" %}
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="{% static 'js/talktheme.js' %}" charset="UTF-8"></script>
+    {% endblock %} 

@@ -1,9 +1,10 @@
-from django.urls import path
+from django.urls import include, path
 
 from . import views
 
 app_name = 'talktheme'
 urlpatterns = [
     # main画面はwebアプリに記載
-    path('', views.main, name='main'),
+    path('', views.showPages, name='main'),
+    path('draw/', views.showPages, name='draw'),
 ]
