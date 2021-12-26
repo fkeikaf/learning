@@ -1,9 +1,9 @@
 version: '0.0.1'
 services:
-  python-env-test:
+  celery_test:
     restart: always
     build: .
-    container_name: 'python-env-test'
+    container_name: 'celery-test'
     working_dir: '/var/work'
     tty: true
     ports:
