@@ -1,2 +1,3 @@
-# learning
-学習内容を記録できればいいね
+# develop-opencv
+OpenCVとPythonによる機械学習プログラミング
+
