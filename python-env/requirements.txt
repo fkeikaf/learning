@@ -1,3 +1,5 @@
+argparse
+chainer
 numpy
 pandas
 scikit-learn

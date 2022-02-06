@@ -1,9 +1,8 @@
 version: '0.0.1'
 services:
-  python-env-test:
+  python-env:
     restart: always
     build: .
-    container_name: 'python-env-test'
     working_dir: '/var/work'
     tty: true
     ports:
